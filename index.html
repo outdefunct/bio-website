@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/button_play.css">
+    <link rel="stylesheet" href="css/buttons_url_round.css">
+    
+    <title>Pavlo</title>
+    <link rel="icon" type="image/jpeg" href="assets/icon.jpg">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/script.js"></script> 
+
+
+</head>
+<body>
+      <video id="background" autoplay muted loop>
+          <source src="assets/video.mp4" type="video/mp4">
+      </video>
+
+
+      <div id="Container">
+
+
+        <div class="buttonplay" href="#" id="click__to__play" onclick="handleClick()" style="--color:#fffffffc;" >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Click to Enter
+        </div>
+
+
+      <video id="banner" autoplay muted loop>
+          <source src="assets/banner.mp4" type="video/mp4">
+    </video>
+
+      <div id="Menu">
+
+          <img id="avatar" src="assets/avatar.jpg" alt="Avatar">
+
+          <div id="MenuNick">
+          <p class="nickname">OutDef</p>
+          <p class="hover_nickname">UID: 1</p>
+          <p class="hover_nickname2">DEV</p>
+
+          <p id="custom-text">So, save me</p>
+
+          <ul class="wrapper">
+            <li class="icon Discord" onclick="window.open('https://discord.com', '_blank')">
+              <span class="tooltip">Discord</span>
+              <span><i class="fab fa-discord"></i></span>
+            </li>
+            <li class="icon telegram" onclick="window.open('https://www.youtube.com', '_blank')">
+              <span class="tooltip">Telegram</span>
+              <span><i class="fab fa-telegram"></i></span>
+            </li>
+          </ul>
+          </div>
+
+          <div class="menu_xx"></div>
+
+    <div id="musicToggleBtn" onclick="toggleMusic()">
+    <img id="btn_img_play" src="assets/pause.svg" alt="Pause"></div>
+</div>
+      
+
+      
+      <audio id="music__fun" loop>
+          <source src='assets/music.mp3' type='audio/mp3'>
+      </audio>
+
+  </body>        
+</html>
